@@ -1,5 +1,5 @@
 This is the mobile flashcards project made by Juan Cardena for the React Nanodegree.
-This project was tested using Expo on an Iphone 6 and Iphone 8.
+This project was tested using Expo on Iphone 6 and Iphone 8.
 
 ## Installation
 
