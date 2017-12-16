@@ -43,9 +43,11 @@ class QuizView extends Component{
     return (
       <ScrollView style={{flex: 1}}>
         <View style={styles.item}>
-          <Text style={{textAlign: 'left', alignSelf: 'stretch', fontSize: 20, marginLeft:5}}>
-            {(currentQuestion+1).toString() + '/' + deck.questions.length}
-          </Text>
+          {!showSummary &&
+            <Text style={{textAlign: 'left', alignSelf: 'stretch', fontSize: 20, marginLeft:5}}>
+              {((currentQuestion+1).toString() + '/' + deck.questions.length)}
+            </Text>
+          }
           {!showSummary
             ?  <QuizQuestion  question={question}
                               answerCorrect={this.answerCorrect}

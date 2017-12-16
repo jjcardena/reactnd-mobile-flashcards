@@ -10,7 +10,7 @@ export default function QuizSummary({ correctAnswers, navigation, restartQuiz })
             Quiz Finished!
             </Text>
             <Text style={{fontSize: 30,textAlign: 'center'}}>
-            {correctAnswers}% of correct answers
+            {correctAnswers.toLocaleString(navigator.language, { minimumFractionDigits: 1 })}% of correct answers
             </Text>
           </View>
           <View style={{ alignSelf: 'stretch', justifyContent: 'flex-end', alignItems:'center', marginTop:30}}>
